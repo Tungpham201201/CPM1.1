@@ -14,7 +14,7 @@ from rich.text import Text
 from rich.style import Style
 from cpkrst import CPMEwan
 
-__CHANNEL_USERNAME__ = "Roasted2001"
+__CHANNEL_USERNAME__ = "0369226199"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -76,7 +76,7 @@ def load_player_data(cpm):
 def load_key_data(cpm):
     data = cpm.get_key_data()
     console.print("[bold yellow]========《 Tất Cả Các Hack 》========[/bold yellow]")
-    console.print(f"[bold green]Credits:[/bold green] [bold yellow]{ (data.get('coins') if not data.get('is_unlimited') else 'ROASTED_AMONYMOUS') }[/bold yellow].", end="\n\n")
+    console.print(f"[bold green]Credits:[/bold green] [bold yellow]{ (data.get('coins') if not data.get('is_unlimited') else '🐷Tiến Ngọc Hoàng 🤪') }[/bold yellow].", end="\n\n")
 
 def prompt_valid_value(content, tag, password=False):
     while True:
