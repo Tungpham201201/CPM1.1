@@ -15,6 +15,7 @@ from rich.style import Style
 from cpkrst import CPMEwan
 
 __CHANNEL_USERNAME__ = "0369226199"
+__TIENDE__ = "Tiến dâm"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -53,6 +54,7 @@ def banner(console):
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text)
     console.print("[bold yellow]      ♕ CPKVN[/bold yellow][bold red]: Car Parking 1 Hacking Tool VietNames.[/bold red]")
+    console.print("[bold yellow]      ♕ Biệt danh: [/bold yellow][bold red]{__TIENDE__}[/bold red]")
     console.print("[bold yellow]   ==================================================[/bold yellow]")
     console.print("[bold red]    《 Lưu ý:[/bold red][bold red]: Đăng xuất tài khoản trước khi hack 》", end="\n\n")
 
@@ -467,7 +469,7 @@ if __name__ == "__main__":
                 console.print("[bold yellow][!] Chỉnh sửa số cuộc đua bạn thắng.[/bold yellow]")
                 amount = IntPrompt.ask("[bold yellow][?] số lượng[/bold yellow]")
                 console.print("[bold green][%] Đang thay đổi dữ liệu của bạn[/bold green]: ", end=None)
-                if amount > 0 and amount <= 999:
+                if amount > 0 and amount <= 99999:
                     if cpm.set_player_wins(amount):
                         console.print("[bold green]Đã thành công.[/bold green]")
                         console.print("[bold green]==================================[/bold green]")
@@ -488,7 +490,7 @@ if __name__ == "__main__":
                 console.print("[bold yellow][!] Chỉnh sửa số cuộc đua bạn thua[/bold yellow]")
                 amount = IntPrompt.ask("[bold yellow][?] Số lượng[/bold yellow]")
                 console.print("[bold green][%] Đang thay đổi dữ liệu của bạn[/bold green]: ", end=None)
-                if amount > 0 and amount <= 999:
+                if amount > 0 and amount <= 99999:
                     if cpm.set_player_loses(amount):
                         console.print("[bold green]Đã thành công.[/bold green]")
                         console.print("[bold green]==================================[/bold green]")
